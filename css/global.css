@@ -1,0 +1,1174 @@
+/*------------------------------------------------------*
+*-- CSS Drupal 7--------------*
+*------------------------------------------------------*/
+
+/*------------------------------------------------*
+ *---  Provence Formation 2012 --*
+ *------------------------------------------------*/
+/*------- EFFETS VISUELS GENERIQUES--------------*/
+.ombrage {
+    border: 5px solid #fff;
+    -moz-box-shadow: 8px 8px 12px #aaa;
+    -webkit-box-shadow: 8px 8px 12px #aaa;
+    box-shadow: 8px 8px 12px #555;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+.ombrage_bas {
+
+    -moz-box-shadow: 2px 2px 5px #aaa;
+    -webkit-box-shadow: 2px 2px 5px #aaa;
+    box-shadow: 2px 2px 5px #555;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+.table_tr_ombrage_bas{
+    -moz-box-shadow: 1px 2px 2px #aaa;
+    -webkit-box-shadow: 1px 2px 2px #aaa;
+    box-shadow: 1px 2px 2px #555;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+.ombrage_bloc {
+
+    -moz-box-shadow: 2px 2px 5px #aaa;
+    -webkit-box-shadow: 2px 2px 5px #aaa;
+    box-shadow: 2px 2px 5px #555;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+.ombrage_bas_table_actu{
+    -moz-box-shadow: 2px 2px 5px #aaa;
+    -webkit-box-shadow: 2px 2px 5px #aaa;
+    box-shadow: 2px 2px 5px #555;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+ 
+/*------- COULEURS DE BASE POUR CSS---------------∕∕
+rouge #E2001A
+rose #E2007A
+orange #F29400
+bleu #00AAD2
+vert #C8D215
+jaune #F8E91B
+violet #93117E
+gris clair #9C9E9F
+gris fonce #606171
+orange fonce logo #DE603A
+∕∕------- FIN COULEURS ---------------*/
+/**********STYLE POUR LES BLOCS*******************/
+
+/**----HEADER---***/
+
+
+/**----MIDDLE---***/
+#middle-content p{
+	color:#000;
+	padding: 3px;
+
+}
+
+.item-list ul li {
+list-style-image:none;
+list-style-position:none;
+list-style-type:none;
+margin:0 0 0.25em 1.5em;
+padding:0;
+}
+
+.item-list ul{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+}
+
+/*style lien en savoir plus*/
+li.node_read_more a{
+color : red;
+text-decoration: none;
+text-align:left;
+}
+li.node_read_more a:hover{
+text-decoration: underline;
+}
+
+
+
+/*---------------------------*/
+/**----CONTENT TOP---***/
+#content-header{
+padding: 5px;
+}
+/**style du fil d'ariane**/
+.breadcrumb {
+color:#94127F;
+text-decoration:none;
+}
+.breadcrumb a{
+color:#E2007A;
+text-decoration:none;
+}
+.breadcrumb a:hover{
+color:#94127F;
+text-decoration:underline;
+}
+/**----CONTENT BOTTOM---***/
+#content-top{}
+.taxonomy{
+text-align:right;
+padding: 3px;
+margin: 0px;
+}
+.taxonomy a{
+color: #FF00FF;
+text-decoration:none;
+}
+.taxonomy a:hover{
+text-decoration:underline;
+}
+/*----page login------*/
+#user-login{
+margin: auto;
+width: 450px;
+padding:10px 0;
+}
+/**----COLONNE GAUCHE---***/
+#left-content p{
+	color:#000;
+
+}
+#left-content a{
+	color:#666666;
+	text-decoration:none;
+}
+#left-content a:hover{
+	color:#990000;
+	text-decoration:underline;
+}
+#left-content li{
+	margin:0;
+	padding: 0;
+	list-style:none;
+}
+/**----COLONNE DROITE---***/
+#right-content p{
+	color:#000;
+
+}
+#right-content a{
+	color:#666666;
+	text-decoration:none;
+}
+#right-content a:hover{
+	color:#990000;
+	text-decoration:underline;
+}
+#right-content li{
+	margin:0;
+	padding: 0;
+	list-style:none;
+}
+/**----FOOTER---***/
+#footer a{
+color: #606171;
+text-decoration:none;
+}
+#footer a:hover{
+color: #9C9E9F;
+}
+
+ /*------------------------------------------------------*
+  *------------ CSS H  ----*
+  *------------------------------------------------------*/
+  
+h1 {
+	margin: 0;
+	padding: 0;
+	color:#E2007A;
+	font-size: 20px;
+}
+  
+h2 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 18px;
+}
+h2.title{
+	margin: 5px;
+	padding: 0;
+	color:#000;
+	font-size: 18px;
+}
+h2.title a{
+	color:#EF1D1D;
+}
+h3 {
+	margin: 0;
+	padding: 0;
+	color:#E2007A;
+	font-size: 16px;
+}
+h4 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 14px;
+}
+h5 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 12px;
+}
+h6 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 10px;
+}
+.titre_page{
+      line-height: 30px;
+}
+/*--------------------------------------------
+---- STYLE POUR PAGE.TPL ET NODE.TPL OVERRIDE
+**********************************************
+-------------- GENERIQUE --------------------*/
+
+/*//////////////////////\\\\\\\\\\\\\\\\\\\\\\
+********** STYLE VIEWS GLOBAL **********
+\\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/
+
+.texte-vide{
+    display: block;
+    margin: 5px;
+    text-align: center;
+    background: #D0D1D2;
+    padding: 5px;
+    
+}
+/*//////////////////////\\\\\\\\\\\\\\\\\\\\\\
+********** STYLE NODE.TPL OVERRIDE **********
+\\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/
+/*//////////////// COLONNE 1 \\\\\\\\\\\\\\\\*/
+#colonne-1 p{}
+#colonne-1 a{}
+#colonne-1 a:hover{}
+#colonne-1 h2{}
+#colonne-1 h3{}
+#colonne-1 h4{}
+#colonne-1 ul{}
+#colonne-1 li{}
+#colonne-1 hr{}
+
+
+/*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
+#colonne-2 p{}
+#colonne-2 a{}
+#colonne-2 a:hover{}
+#colonne-2 h2{margin: 5px;color: #911381;}
+#colonne-2 h3{}
+#colonne-2 h4{}
+#colonne-2 ul{
+    list-style: inside circle;
+    margin: 5px;
+}
+#colonne-2 li{}
+#colonne-2 hr{}
+
+/*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
+#colonne-3 p{}
+#colonne-3 a{}
+#colonne-3 a:hover{}
+#colonne-3 h2{}
+#colonne-3 h3{}
+#colonne-3 h4{}
+#colonne-3 ul{}
+#colonne-3 li{}
+#colonne-3 hr{}
+/*¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+-------- PAGE LYCEE NODE.TPL ---------------*/
+#middle-content-page-lycee a{
+    color: #E2007A;
+    padding: 0 2px;
+}
+#middle-content-page-lycee a:hover{
+    background: #E2007A;
+    color: white;
+    text-decoration: none;
+}
+#middle-content-page-lycee strong{
+    color: #E2007A;
+}
+#middle-content-page-lycee p,#middle-content-page-lycee ul{
+    padding: 3px;
+    
+}
+#middle-content-page-lycee li{
+    list-style-position: inside;
+    text-indent: 5px;
+}
+#diapo_lycee{
+    display: block;
+    margin: 0 auto;
+    width: 175px !important;
+    width: 174px;/*IE*/
+}
+#diapo_lycee img{
+    border: 2px solid #94127F;
+    margin: 10px 0 0;
+}
+#diapo_lycee{}
+
+#docs_lycee{
+    width: 200px;
+    margin: 0 auto;
+}
+#docs_lycee h3{
+    font-family:Arista,trebuchet MS,sans-serif;
+    text-align: center;
+    color: #950F7E;
+    padding: 5px 0;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+#docs_lycee table{
+    width: 200px;
+    display: block;
+    border: 3px solid #D0D1D2;
+    background: #EFEFEF;
+    box-shadow:0px 0px 7px 1px #564E4E;
+    -moz-box-shadow: 3px #564E4E;
+    -webkit-box-shadow: 3px #564E4E;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+#docs_lycee tbody{
+     display: block;
+    padding: 10px 5px;
+    text-align: center;
+}
+#docs_lycee tr{}
+#docs_lycee td{}
+#docs_lycee td a{
+    display: block;
+    color: #564E4E;
+    text-decoration: none;
+    width: 185px;
+}
+#docs_lycee td a:hover{
+    background: #E2007A;
+    border-radius: 10px;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+#docs_lycee .filefield-icon{
+    display: none;
+}
+#video_lycee{
+    border: 2px solid #950F7E;
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+    
+}
+/*------------------------------------
+        PAGE FICHE FORMATION
+_______________________________________*/
+.pageficheform_content_col1 p,.pageficheform_content_col2 p{
+    padding: 5px;
+}
+.pageficheform_content_col1 a,.pageficheform_content_col2 a{
+    color: #E2007A;
+    padding: 0 2px;
+}
+.pageficheform_content_col1 a:hover,.pageficheform_content_col2 a:hover{
+     background: #E2007A;
+    color: white;
+    text-decoration: none;
+}
+.pageficheform_content_col1 h2,.pageficheform_content_col2 h2{
+    color: #00AAD5;
+    font-size: 16px;
+    font-family:trebuchet MS,sans-serif;
+}
+.pageficheform_content_col1 h3,.pageficheform_content_col2 h3{
+    font-size: 14px;
+}
+.pageficheform_content_col1 h4,.pageficheform_content_col2 h4{
+    font-size: 12px;
+    color: #ADC91F;
+}
+.pageficheform_content_col1 ul,.pageficheform_content_col2 ul{
+    list-style: circle inside;
+}
+.pageficheform_content_col1 strong,.pageficheform_content_col2 strong{
+    color: #00ACD1;
+}
+.pageficheform_content_col1,.pageficheform_content_col2{}
+#deco-ficheform{
+    margin: 5px 0;
+}
+#deco-ficheform img{
+ width: 460px;
+ border: 3px solid #E2007A;
+ box-shadow:0px 0px 7px 1px #564E4E;
+ -moz-box-shadow: 3px #564E4E;
+ -webkit-box-shadow: 3px #564E4E;
+}
+#complement-ficheform p{
+    font-family:Arista,trebuchet MS,sans-serif;
+    font-size: 18px;
+    color: #911381;
+}
+#complement-ficheform{}
+#docs_ficheform {
+    background: #EFEFEF;
+    border: 3px solid #95127C;
+    width: 470px;
+     box-shadow:0px 0px 7px 1px #564E4E;
+    -moz-box-shadow:0px 0px 7px 1px #564E4E;
+    -webkit-box-shadow:0px 0px 7px 1px #564E4E;
+}
+#docs_ficheform table{
+}
+#docs_ficheform td{
+    text-align: center;
+     width: 470px;
+     display: block;
+}
+#docs_ficheform td a{
+    text-decoration: none;
+    color: #543F4F;
+    
+}
+#docs_ficheform td a:hover{
+     background: #E2007A;
+    border-radius: 10px;
+}
+#docs_ficheform .filefield-icon{
+    display: none;
+}
+.taxo-ficheform{
+   font-style: italic;
+}
+/*------------------------------------
+        PAGE POLE-FILIERES
+_______________________________________*/
+.titre_page-pole{
+    text-align: center;
+}
+.views-field-field-complement-ficheform-value{
+    font-size: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+}
+#filiere-techno table,#filiere-pro table,#filiere-bts table{
+    width: 300px;
+}
+/*Filiere Techno*/
+#filiere-techno{
+    width: 300px;
+    padding: 5px;
+}
+#filiere-techno h3{
+    color: #950F7E;
+    margin: 5px;
+    text-align: center;
+    font-family:Arista,trebuchet-MS,sans-serif;
+}
+#filiere-techno table{
+    border: 3px solid #950F7E;
+    background: #EFEFEF;
+    box-shadow:0px 0px 3px 1px #564E4E;
+    -moz-box-shadow:0px 0px 3px 1px #564E4E;
+    -webkit-box-shadow:0px 0px 3px 1px #564E4E;
+}
+#filiere-techno tbody{}
+#filiere-techno tr{}
+#filiere-techno td{
+    padding: 5px;
+    color: #911381;
+}
+#filiere-techno a{
+    text-decoration: none;
+    color: #543F4F;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 2px;
+    display: block;
+}
+#filiere-techno a:hover{
+    background: #D0D1D2;
+    border-radius: 10px;
+}
+
+/*Filiere Pro*/
+#filiere-pro{
+    width: 300px;
+    padding: 5px;
+}
+#filiere-pro h3{
+    color: #00ACD1;
+    margin: 5px;
+    text-align: center;
+    font-family:Arista,trebuchet-MS,sans-serif;
+}
+#filiere-pro table{
+    border: 3px solid #00ACD1;
+    background: #EFEFEF;
+    box-shadow:0px 0px 3px 1px #564E4E;
+    -moz-box-shadow:0px 0px 3px 1px #564E4E;
+    -webkit-box-shadow:0px 0px 3px 1px #564E4E;
+}
+#filiere-pro tbody{}
+#filiere-pro tr{}
+#filiere-pro td{
+    padding: 5px;
+    color: #911381;
+}
+#filiere-pro a{
+    text-decoration: none;
+    color: #543F4F;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 2px;
+    display: block;
+}
+#filiere-pro a:hover{
+    background: #D0D1D2;
+    border-radius: 10px;
+}
+
+/*Filiere BTS*/
+#filiere-bts{
+    width: 300px;
+    padding: 5px;
+}
+#filiere-bts h3{
+    color: #E2007A;
+    margin: 5px;
+    text-align: center;
+    font-family:Arista,trebuchet-MS,sans-serif;
+}
+#filiere-bts table{
+    border: 3px solid #E2007A;
+    background: #EFEFEF;
+    box-shadow:0px 0px 3px 1px #564E4E;
+    -moz-box-shadow:0px 0px 3px 1px #564E4E;
+    -webkit-box-shadow:0px 0px 3px 1px #564E4E;
+}
+#filiere-bts tbody{}
+#filiere-bts tr{}
+#filiere-bts td{
+    padding: 5px;
+    color: #911381;
+}
+#filiere-bts a{
+    text-decoration: none;
+    color: #543F4F;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 2px;
+    display: block;
+}
+#filiere-bts a:hover{
+    background: #D0D1D2;
+    border-radius: 10px;
+}
+
+/*______________________________________
+-------- PAGE TERM TAXO ----------------
+*/
+#TAXOLISTE{
+    background:#EFEFEF;
+    border: 2px solid #E2007A;
+    padding: 10px;
+    margin: 10px 0;
+}
+.taxo-page{}
+.taxo-page a{
+    text-decoration: none;
+    color: #95127C;
+    
+}
+.taxo-page a:hover{
+    background: #95127C;
+    color: white;
+}
+.taxo-page table{
+    width: 500px;
+}
+.taxo-page tbody{}
+.taxo-page tr{
+    display: block;
+    margin: 5px 0;
+}
+.taxo-page td{}
+/*------------------------------------
+        PAGE CONTENU VDL
+_______________________________________*/
+.vdl-content{
+    border-left: 1px solid #E2007A;
+}
+.vdl-content p{
+    padding: 5px;
+}
+.vdl-content strong,.vdl-content b{
+    color: #E2007A;
+}
+#vdl-passerelle a{
+    text-decoration: none;
+    color: #E2007A;
+}
+#vdl-passerelle{
+     background: url('../images/bg_point_rp.gif') repeat top left;
+     margin: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 170px;
+}
+#vdl-illustration img{
+    border: 2px solid #E2007A;
+    margin: 5px 0;
+}
+#vdl-galerie-image{
+    width: 520px;
+    margin: 5px 0;
+}
+/*Galerie lightbox*/
+#vdl-galerie-image .image-gallery-nodes ul li {
+    background: none repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 100px;
+    list-style-type: none;
+    text-align: center;
+    width: 150px;}
+#vdl-galerie-image .image-gallery-nodes ul li img{
+    border: 3px solid #EFEFEF;
+}
+#vdl-video{
+    width: 425px;
+    margin: 0 auto;
+    border: 2px solid #D0D1D2;
+}
+#vdl-docs h3{
+   font-family:Arista,trebuchet-MS,sans-serif;
+    text-align: center;
+    color: #950F7E;
+    padding: 5px 0;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+#vdl-docs table{
+    background: #EFEFEF;
+    border: 3px solid #D0D1D2;
+    width: 225px;
+    margin: 0 auto;
+     box-shadow:0px 0px 7px 1px #564E4E;
+    -moz-box-shadow:0px 0px 7px 1px #564E4E;
+    -webkit-box-shadow:0px 0px 7px 1px #564E4E;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+#vdl-docs td{
+    text-align: center;
+}
+#vdl-docs td a{
+    text-decoration: none;
+    color: #543F4F;
+    
+}
+#vdl-docs td a:hover{
+     background: #E2007A;
+    border-radius: 10px;
+}
+#vdl-docs .filefield-icon{
+    display: none;
+}
+
+#gasquet-actus h3{
+   font-family:Arista,trebuchet-MS,sans-serif;
+    text-align: center;
+    color: #E2007A;
+    padding: 5px 0;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+#gasquet-actus table{
+    background: #EFEFEF;
+    border: 3px solid #E2007A;
+    width: 95%;/*225px;*/
+    margin: 0 auto;
+    -moz-box-shadow:0px 0px 7px 1px #564E4E;
+    -webkit-box-shadow:0px 0px 7px 1px #564E4E;
+    box-shadow:0px 0px 7px 1px #564E4E;
+    cellspacing=0;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+#gasquet-actus tr{
+    
+}
+#gasquet-actus td{
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+}
+#gasquet-actus td a{
+    text-decoration: none;
+    color: #543F4F;
+    padding: 3px;
+    
+}
+#gasquet-actus td a:hover{
+     background: #D0D1D2;
+    border-radius: 10px;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+/*------------------------
+        PAGE
+    ACTU GLOBALE
+--------------------------*/
+.titre_page-actu{
+    text-align: center;
+}
+.titre-actu{
+    bottom: -20px;
+    left: 3px;
+    position: relative;
+    width: 190px;
+    z-index: 20;
+    }
+.img-actu img{
+    float: left;
+    border: 1px solid white;
+}
+.actuGlobale-archives{
+   text-align: center;
+}
+.actuGlobale-archives a{
+    font-size: 11px;
+    color: #950F7E;
+    margin: 5px;
+    font-family:Arista,trebuchet-MS,sans-serif;
+}
+.actuGlobale-archives a:hover{}
+/*Liste actu europe*/
+#actu-liste-europe p.txt-vide-actu-globale{
+    width: 290px;
+    text-align: center;
+}
+#actu-liste-europe{
+    width: 290px;
+}
+#actu-liste-europe h3{
+    font-size: 20px;
+    color: #950F7E;
+    margin: 5px;
+    text-align: center;
+    font-family:Arista,trebuchet-MS,sans-serif;
+}
+#actu-liste-europe table{
+    border: 3px solid #950F7E;
+    background: #EFEFEF;
+    box-shadow:0px 0px 3px 1px #564E4E;
+    -moz-box-shadow:0px 0px 3px 1px #564E4E;
+    -webkit-box-shadow:0px 0px 3px 1px #564E4E;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+#actu-liste-europe tbody{}
+#actu-liste-europe tr{}
+#actu-liste-europe td{
+    padding: 2px;
+}
+#actu-liste-europe a{
+    color: #564E4E;
+    font-weight: bold;
+    text-decoration: none;
+}
+#actu-liste-europe a:hover{
+    color: #E2007A;
+}
+/*Liste actu VDL*/
+#actu-liste-vdl p.txt-vide-actu-globale{}
+#actu-liste-vdl{
+     margin: 0 0 0 13px;
+    width: 285px;
+}
+#actu-liste-vdl h3{
+    font-size: 20px;
+    color: #E2007A;
+    margin: 5px;
+    text-align: center;
+    font-family:Arista,trebuchet-MS,sans-serif;
+}
+#actu-liste-vdl table{
+    border: 3px solid #E2007A;
+    background: #EFEFEF;
+    box-shadow:0px 0px 3px 1px #564E4E;
+    -moz-box-shadow:0px 0px 3px 1px #564E4E;
+    -webkit-box-shadow:0px 0px 3px 1px #564E4E;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+#actu-liste-vdl tbody{}
+#actu-liste-vdl tr{}
+#actu-liste-vdl td{
+    padding: 2px;
+}
+#actu-liste-vdl a{
+    color: #564E4E;
+    font-weight: bold;
+    text-decoration: none;
+}
+#actu-liste-vdl a:hover{
+    color: #E2007A;
+}
+/*Liste annonce RP - Big*/
+#actu-liste-rp-annonce p.txt-vide-actu-globale{
+    margin: 0 auto;
+    width: 365px;
+    text-align: center;
+    color: #E85134;
+}
+#actu-liste-rp-annonce{
+    margin: 0 auto;
+    width: 365px;
+}
+#actu-liste-rp-annonce h3{
+    color: #00ACD1;
+    text-align: center;
+    margin: 5px 0;
+}
+#actu-liste-rp-annonce img{
+    border: 2px solid #E2007A;
+    padding: 1px;
+}
+#actu-liste-rp-annonce a{
+    color: #E2007A;
+    text-decoration: none;
+}
+#actu-liste-rp-annonce a:hover{
+    color: #911381;
+}
+/*Liste annonce RP - Small*/
+#actu-liste-rp-annonce2 p.txt-vide-actu-globale{
+     margin: 0 auto;
+    width: 365px;
+    text-align: center;
+    color: #E85134;
+}
+#actu-liste-rp-annonce2 img{
+    border: 1px solid #E2007A;
+    padding: 1px;
+}
+#actu-liste-rp-annonce2 a{
+    color: #E2007A;
+    text-decoration: none;
+    text-align: center;
+}
+#actu-liste-rp-annonce2 a:hover{
+    color: #911381;
+}
+#actu-liste-rp-annonce2 table{}
+#actu-liste-rp-annonce2 tbody{}
+#actu-liste-rp-annonce2 tr{}
+#actu-liste-rp-annonce2 td{
+    padding: 1px;
+}
+/*-------------------------------
+      ARCHIVES GLOBAL STYLE
+*/
+.content-archive{
+    border-left: 1px solid #E2007A;
+    padding: 5px;
+}
+/*Bloc filtre exposé archives*/
+.archives-exposed{
+    width: 405px;
+    margin: 0 auto;
+}
+.archives-exposed .views-widget-filter-field_date_evenement_value{
+    width: 150px;
+}
+.archives-exposed .views-exposed-widgets{
+    width: inherit;
+    padding: 5px;
+    margin: 5px;
+    background: #EFEFEF;
+    border: #E2007A solid 2px;
+    box-shadow: inset 0px 0px 3px #606171;
+}
+.archives-exposed{}
+.archives-exposed{}
+
+/*Liste des archives*/
+#archives{}
+#archives table{
+    width: 98%
+}
+#archives tbody{}
+#archives tr{
+    background: #EFEFEF;
+    background-color: #EFEFEF;
+    display: block;
+    margin: 2px 0;
+}
+#archives tr :hover{
+    background: #EFA0CA;   
+    
+}
+#archives td{
+    padding: 2px 0;
+    display: inline-block;
+    width: 100%;
+}
+#archives td:hover{
+    border-right: #E2007A solid 2px;
+}
+#archives img{
+    border: #911381 1px solid;
+    float: right;
+    margin: 2px 4px;
+    padding: 2px;
+}
+#archives tr a{
+    color: #E2007A;
+    text-decoration: none;
+    padding: 2px;
+    font-weight: bold;
+}
+#archives tr a:hover{
+    color: white;
+}
+#archives .views-field-tid{
+    text-align: right;
+    font-size: 10px;
+    font-style: italic;
+   
+}
+/*------------------------------------
+        PAGE CONTENU ACTUALITES
+_______________________________________*/
+.actu-content{
+    border-left: 1px solid #E2007A;
+}
+.actu-content p{
+    padding: 5px;
+}
+#actu-passerelle a{
+    text-decoration: none;
+    color: #E2007A;
+}
+#actu-passerelle, #taxo-custom{
+     background: url('../images/bg_point_rp.gif') repeat top left;
+     margin: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 170px;
+}
+#taxo-custom{
+    color: #00ACD1;
+    font-weight: bold;
+}
+#actu-illustration img{
+    border: 2px solid #E2007A;
+    margin: 5px 0;
+}
+#actu-galerie-image{
+    width: 520px;
+}
+/*Galerie lightbox*/
+#actu-galerie-image .image-gallery-nodes ul li {
+    background: none repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 100px;
+    list-style-type: none;
+    text-align: center;
+    width: 150px;}
+#actu-galerie-image .image-gallery-nodes ul li img{
+    border: 3px solid #EFEFEF;
+}
+#actu-video{
+    width: 425px;
+    margin: 0 auto;
+    border: 2px solid #D0D1D2;
+}
+#actu-docs h3{
+   font-family:Arista,trebuchet-MS,sans-serif;
+    text-align: center;
+    color: #950F7E;
+    padding: 5px 0;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+#actu-docs table{
+    background: #EFEFEF;
+    border: 3px solid #D0D1D2;
+    width: 225px;
+    margin: 0 auto;
+     box-shadow:0px 0px 7px 1px #564E4E;
+    -moz-box-shadow:0px 0px 7px 1px #564E4E;
+    -webkit-box-shadow:0px 0px 7px 1px #564E4E;
+}
+#actu-docs td{
+    text-align: center;
+}
+#actu-docs td a{
+    text-decoration: none;
+    color: #543F4F;
+    
+}
+#actu-docs td a:hover{
+     background: #E2007A;
+    border-radius: 10px;
+}
+#actu-docs .filefield-icon{
+    display: none;
+}
+
+/*------------------------------------
+        PAGE ERREUR
+_______________________________________*/
+
+#erreur-illustration{}
+#erreur-illustration img{
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #4F454A;
+    padding: 1px;
+}
+/*------------------------------------
+        MESSAGE CONSTRUCTION
+_______________________________________*/
+#construction{
+background: #DFDFDF;
+width:95%;
+margin: 0 auto;
+}
+#construction{
+    text-align: center;
+    
+}
+#construction a{
+    color: #E2007A;
+    text-decoration: none;
+    padding: 2px;
+}
+#construction a:hover{
+    background: #E2007A;
+    color: white;
+}
+/*------------------------
+BLOC FLUX RSS ACTU DE L'ASSO
+-----------------------------*/
+#block-aggregator-feed-1 h3{
+    color: #E2007A;
+    font-family: arista,Trebuchet-MS,sans-serif;
+    padding: 5px;
+    text-align: center;
+     font-size: 18px;
+}
+#block-aggregator-feed-1 ul{
+    list-style: none;
+    background:  url(../images/bg_doc_utile_rp.jpg) repeat left top ;
+    margin: 0 auto;
+    width: 325px;
+    padding: 20px 0;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+    position: relative;
+}
+#block-aggregator-feed-1 ul li{
+    margin: 5px 0;
+    list-style: none;
+
+}
+#block-aggregator-feed-1 li a{
+    text-decoration: none;
+    padding: 2px;
+    display: block;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+    position: relative;
+    width: 280px;
+    margin: 0 auto;
+    color: white;
+    background: #E2007A;
+
+}
+#block-aggregator-feed-1 li a:hover{
+      background: white;
+       color: #E2007A;
+    text-decoration: none;
+}
+/*----------------------
+Liste Actus pour homepage
+-----------------------*/
+#HPGauche1 h3.title,#HPGauche2 h3.title{
+    text-align: center;
+    font-family: Arista,Trebuchet MS,sans-serif;
+    display: block;
+    font-size: 22px;
+}
+#HPGauche2 .view-empty{text-align: center;}
+#table-actus-hp, #table-actus-hp2{
+    width: 400px;
+    margin: 0 auto;
+    border: 0;
+}
+#table-actus-hp thead th,#table-actus-hp2 thead th{
+    border-bottom: 3px solid #E2007A;
+}
+#table-actus-hp tbody, #table-actus-hp2 tbody{}
+#table-actus-hp tr, #table-actus-hp2 tr{
+    margin: 9px;
+    display: block;
+}
+#table-actus-hp td, #table-actus-hp2 td{
+    background: white;
+    border: 0;
+    margin: 2px 0;
+    padding: 5px;
+    display: block;
+    border-bottom: 1px solid #E2007A;
+}
+#table-actus-hp td:hover, #table-actus-hp2 td:hover{
+    background: #E2007A;
+}
+#table-actus-hp p,#table-actus-hp2 p{}
+#table-actus-hp a, #table-actus-hp2 a{
+    color: #606070;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+#table-actus-hp a:hover, #table-actus-hp2 a:hover{
+    text-decoration: underline;
+    color: white;
+}
+#table-actus-hp span.date-display-single, #table-actus-hp2 span.date-display-single{
+    text-align: right;
+    float: right;
+    font-style: italic;
+}
+/*------------------------
+_____ DEFILANT HP ________
+--------------------------*/
+#annonce{color: #E2017B;display: block;font-size: 16px;font-weight: bold;margin: 5px auto;
+padding: 11px 0;text-align: center;width: 915px;border: 2px solid;}
+#annonce a{color: #93117E;text-decoration: none;font-weight: bold;}
+#annonce a:hover{text-decoration: underline;}
