@@ -2,10 +2,8 @@
 $theme_path = drupal_get_path('theme', 'cyranod7_mg');
 include ($theme_path.'/includes/inc_header.php');
 ?>
- <!-- ______________________ LAYOUT PAGE MODELE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
+ <!-- ______________________ LAYOUT PAGE VDL OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
-
-      
 
  <div id="contentPage" class="clearfix">
 
@@ -27,21 +25,11 @@ include ($theme_path.'/includes/inc_header.php');
 	              <?php print render ($page['content_top_node']); ?>
             </div> <!-- /#content-top-node -->
             <?php endif; ?>
-              
-            <!-- Si besoin de colonne sans node custom tpl -->
-              <div id="left-content">
-              <?php  print render($title_prefix); ?>
-            <?php if ($title): ?><h1 class="title"><?php print $title; ?></h1><?php endif; ?>
-            
-<?php print render($title_suffix); ?>
   
-	  <?php if (!empty($page['left'])): ?>
-              <div id="left-content">  <?php print render ($page['left']); ?>       </div>
-                <?php endif; ?>
-          </div>
-             	<!--fin du contenu gauche -->
-
-      <div id="content-inner" class="inner column center">
+  
+  
+      
+ <div id="content-inner" class="inner column center">
 
         <?php if ($messages || $tabs || $action_links): ?>
           <div id="content-header">
@@ -61,7 +49,7 @@ include ($theme_path.'/includes/inc_header.php');
           </div> <!-- /#content-header -->
         <?php endif; ?>
 
-        <div id="content-area">
+        <div id="content-area middle-content-page-VDL">
           <?php print render($page['content']) ?>
         </div>
 
@@ -70,17 +58,7 @@ include ($theme_path.'/includes/inc_header.php');
       </div>
     </div> <!-- /content-inner /content -->
 
-  
-
-    
-    <!-- Si besoin de colonne sans node custom tpl -->
-    <?php if (!empty($page['right'])): ?>
- <div id="right-content" class="colonne"> <?php print render ($page['right']); ?>  </div>
-     <?php endif; ?>
-    <!-- /colonne-right -->
-
- <br clear="all"/>
-	<!-- ______________________ CONTENU BAS _______________________ -->
+<!-- ______________________ CONTENU BAS _______________________ -->
 
       <?php if ($page['content_bottom']): ?>
             <div id="content-bottom">

@@ -7,7 +7,25 @@ include ($theme_path.'/includes/inc_header.php');
 
 	<div id="mainPage">
 
+ <?php if ($messages || $tabs || $action_links): ?>
+          <div id="content-header">
 
+          
+ <!-- ______________________ ADMIN ZONE _______________________ -->
+            <?php if (!empty($page['highlight'])): ?>
+              <div id="highlight"><?php print render($page['highlight']) ?></div>
+            <?php endif; ?>
+
+          
+
+            <?php print $messages; ?>
+            <?php print render($page['help']); ?>
+            <?php print render($tabs); ?>
+
+          </div> <!-- /#content-header -->
+        <?php endif; ?>
+          
+           <!-- ______________________ CONTENT TOP _______________________ -->
           <?php if (!empty($page['content_top'])): ?>
             <div id="content-top">
               <?php print render ($page['content_top']); ?>
