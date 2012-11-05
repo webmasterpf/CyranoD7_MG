@@ -42,6 +42,10 @@ function cyranod7_mg_preprocess_page(&$vars, $hook) {
   if (!empty($vars['secondary_menu'])) {
     $vars['classes_array'][] = 'with-subnav';
   }
+  if (isset($vars['node'])) {
+$vars['theme_hook_suggestion'] = 'page__'.$vars['node']->type; //
+}
+
 }
 
 function cyranod7_mg_preprocess_node(&$vars) {
@@ -199,3 +203,13 @@ function cyranod7_mg_menu_local_tasks(&$variables) {
   return $output;
 
 }
+/**
+     * Override or insert variables into the html template.Donne le page title
+     */
+    function cyranod7_mg_preprocess_html(&$vars) {
+      global $theme_path;
+      // Add conditional CSS for IE7 and below.
+      drupal_add_css($theme_path . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
+      $vars['head_title'] = implode(' | ', array(drupal_get_title(), variable_get('site_name'), variable_get('site_slogan')));  
+    }
+

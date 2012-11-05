@@ -8,11 +8,7 @@
  */
 
 ?>
-
-     
-            
-
-    <?php
+<?php
 
 $viewname_ld3 = 'Liste_docs';
 $view = views_get_view ($viewname_ld3);

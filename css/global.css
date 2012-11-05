@@ -641,6 +641,7 @@ _______________________________________*/
     width: 520px;
     margin: 5px 0;
 }
+#vdl-galerie-image h3{text-align: center;}
 /*Galerie lightbox*/
 #vdl-galerie-image .image-gallery-nodes ul li {
     background: none repeat scroll 0 0 transparent;
@@ -893,13 +894,12 @@ _______________________________________*/
 }
 /*Bloc filtre exposé archives*/
 .archives-exposed{
-    width: 405px;
-    margin: 0 auto;
+    width: 405px;margin: 0 auto;padding: 5px;height: 55px;
 }
 .archives-exposed .views-widget-filter-field_date_evenement_value{
     width: 150px;
 }
-.archives-exposed .views-exposed-widgets{
+.archives-exposed {
     width: inherit;
     padding: 5px;
     margin: 5px;
