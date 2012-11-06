@@ -16,9 +16,9 @@
          */?>
         <div id="colonne-1" class="col1_layout_200_590_200">
 
-      <?php  print render($title_prefix); ?>
-         <?php if ($title): ?><h1 class="title rouge"><?php print $title; ?></h1><?php endif; ?>
-            <?php print render($title_suffix); ?>
+        <?php  print render($title_prefix); ?>
+            <?php if ($title): ?><h1 class="title rouge"><?php print $title; ?></h1><?php endif; ?>
+                <?php print render($title_suffix); ?>
             
             
              <?php
@@ -41,12 +41,8 @@
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
         <div id="colonne-2" class="col2_layout_200_590_200">
 
-            <?php print $picture; ?>
-
-            <?php if ($submitted): ?>
-            <span class="submitted"><?php print $submitted; ?></span>
-            <?php endif; ?>
-
+      
+<!--______________ CONTENU ________________ -->
             <div class="content">
                 <?php 
   	    // We hide the comments and links now so that we can render them later.
@@ -88,7 +84,7 @@ $theme_path = drupal_get_path('theme', 'NOM_THEME');
 include ($theme_path.'/includes/inc_region_col_C3.php');
 ?>
 
-        </div><!--_/C3_ -->
+            </div><!--_/C3_ -->
 
       <?php if (!empty($content['links']['terms'])): ?>
       <div class="terms"><?php print render($content['links']['terms']); ?></div>

@@ -19,16 +19,7 @@ $args_di1 = $view->set_arguments(array($node->nid));
 
 $emptyTextVue = $view->display_handler->get_handlers('empty');
 //$emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Pas images.</div>');
-$options = array(
-  'id' => 'area',
-  'table' => 'views',
-  'field' => 'area',
-  'empty' => FALSE,
-  'content' => "Pas d'images",
-  'format' => 'filtered_html',
-  'tokenize' => 0,
-);
-$emptyText = $view->display_handler->set_option('empty', array('text' => $options));
+$emptyText = $view->display_handler->set_option('empty','<div class="texte-vide">Pas de visuel</div>');
 //Exécution de le vue
 $view->pre_execute();
 $view->execute();

@@ -2,11 +2,10 @@
 $theme_path = drupal_get_path('theme', 'cyranod7_mg');
 include ($theme_path.'/includes/inc_header.php');
 ?>
- <!-- ______________________ LAYOUT PAGE MODELE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
+ <!-- ______________________ LAYOUT WEBFORM GENERIK OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
-
-      
-
+  
+ 
  <div id="contentPage" class="clearfix">
 
     <div id="content">
@@ -27,22 +26,8 @@ include ($theme_path.'/includes/inc_header.php');
 	              <?php print render ($page['content_top_node']); ?>
             </div> <!-- /#content-top-node -->
             <?php endif; ?>
-              
-            <!-- Si besoin de colonne sans node custom tpl -->
-              <div id="left-content">
-                  <?php print render($title_prefix); ?>
-                  <?php if ($title): ?><h1 class="title"><?php print $title; ?></h1><?php endif; ?>
-
-                  <?php print render($title_suffix); ?>
-  
-	  <?php if (!empty($page['left'])): ?>
-              <div id="left-content">  <?php print render ($page['left']); ?>       </div>
-                <?php endif; ?>
-          </div>
-             	<!--fin du contenu gauche -->
-
-  <!-- ______________________ CONTENT INNER GLOBAL _______________________ -->
-      <div id="content-inner" class="inner column center">
+	<!-- ______________________ CONTENT INNER GLOBAL _______________________ -->
+      <div id="content-inner" class="inner column center content-inner-webform">
 
         <?php if ($messages || $tabs || $action_links): ?>
           <div id="content-header">
@@ -62,26 +47,29 @@ include ($theme_path.'/includes/inc_header.php');
           </div> <!-- /#content-header -->
         <?php endif; ?>
 
-        <div id="content-area">
+            <!-- ______________________ CONTENU CENTRAL _______________________ -->
+        <div id="content-area" class="middle-content-webform">
           <?php print render($page['content']) ?>
         </div>
 
         <?php print $feed_icons; ?>
 
       </div>
-    </div> <!-- /content-inner /content -->
+    </div> <!-- /content-inner /content -->  
+      
 
-  
+            
+        <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
+          <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
+            <?php if (!empty($primary_links)){ print theme('links', $primary_links, array('id' => 'primary', 'class' => 'links main-menu')); } ?>
+            <?php if (!empty($secondary_links)){ print theme('links', $secondary_links, array('id' => 'secondary', 'class' => 'links sub-menu')); } ?>
+          </div> <!-- /navigation -->
+        <?php endif; ?>
 
-    
-    <!-- Si besoin de colonne sans node custom tpl -->
-    <?php if (!empty($page['right'])): ?>
- <div id="right-content" class="colonne"> <?php print render ($page['right']); ?>  </div>
-     <?php endif; ?>
-    <!-- /colonne-right -->
-
- <br clear="all"/>
-	<!-- ______________________ CONTENU BAS _______________________ -->
+       
+   
+    	 <br clear="all"/>
+   	<!-- ______________________ CONTENU BAS _______________________ -->
 
       <?php if ($page['content_bottom']): ?>
             <div id="content-bottom">
@@ -97,8 +85,8 @@ include ($theme_path.'/includes/inc_header.php');
   </div> <!-- /navigation -->   
   <?php endif; ?>
   
- </div> <!-- /content-page -->           
-<?php
+ </div> <!-- /content-page -->  
+  <?php
 $theme_path = drupal_get_path('theme', 'cyranod7_mg');
 include ($theme_path.'/includes/inc_footer.php');
-?>     
+?>

@@ -6,7 +6,9 @@ include ($theme_path.'/includes/inc_header.php');
  <!-- ______________________ CONTENU _______________________ -->
 
 	<div id="mainPage">
-
+   <!-- ______________________ LIENS CONTEXTUELS _______________________ -->
+        <?php if ($action_links): ?><ul class="action-links"><?php print render ($action_links); ?></ul><?php endif; ?>
+        
  <?php if ($messages || $tabs || $action_links): ?>
           <div id="content-header">
 

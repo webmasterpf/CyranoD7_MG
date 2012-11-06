@@ -117,7 +117,7 @@ float:left;
 background-color:transparent;
 }
 /*///    partie du centre   ///*/
-#middle-content{
+.middle-content{
 	float:left;
 	position:relative;
 	background-color:transparent;
@@ -151,7 +151,7 @@ margin: 0 auto;
 	margin:0 auto;
 	padding:10px 0;
 	width:990px;
-	background:url("/sites/all/themes/CyranoD6_MG/images/bg_footer.jpg") no-repeat scroll right bottom white;
+	background:url("/sites/all/themes/CyranoD7_MG/images/bg_footer.jpg") no-repeat scroll right bottom white;
 	
 	color: black;
 }
@@ -187,7 +187,7 @@ margin: 0 auto;
 }
 
 /*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
-#colonne-2, #middle-content-override{
+#colonne-2, .middle-content-override{
     float: left;
     margin: 0;
     padding: 0;
@@ -237,13 +237,13 @@ margin: 0 auto;
 ---------------------------------------------------
 LAYOUT POUR PAGE.TPL PAGE LYCEE
 ---------------------------------------------------*/
-#content-inner-page-lycee{
+.content-inner-page-lycee{
     width: auto;
     margin:0;
     float:left;
     background-color:transparent;
 }
-#middle-content-page-lycee  {
+.middle-content-page-lycee  {
     width: auto;
     padding: 5px;
     float: left;
@@ -268,13 +268,13 @@ LAYOUT POUR NODE.TPL PAGE LYCEE
 ---------------------------------------------------
 LAYOUT POUR PAGE.TPL FICHE FORMATION
 ---------------------------------------------------*/
-#content-inner-page-ficheform{
+.content-inner-page-ficheform{
     width: auto;
     margin:0;
     float:left;
     background-color:transparent;
 }
-#middle-content-page-ficheform  {
+.middle-content-page-ficheform  {
     width: auto;
     padding: 5px;
     float: left;
@@ -295,13 +295,13 @@ LAYOUT POUR NODE.TPL FICHE FORMATION
 ---------------------------------------------------
 LAYOUT POUR PAGE.TPL CONTENU VDL
 ---------------------------------------------------*/
-#content-inner-page-VDL{
+.content-inner-page-VDL{
     width: auto;
     margin:0;
     float:left;
     background-color:transparent;
 }
-#middle-content-page-VDL  {
+.middle-content-page-VDL  {
     width: auto;
     padding: 5px;
     float: left;
@@ -311,13 +311,13 @@ LAYOUT POUR PAGE.TPL CONTENU VDL
 ---------------------------------------------------
 LAYOUT POUR PAGE.TPL PAGE POLE-FILIERES
 ---------------------------------------------------*/
-#content-inner-page-pole{
+.content-inner-page-pole{
     width: auto;
     margin:0;
     float:left;
     background-color:transparent;
 }
-#middle-content-page-pole  {
+.middle-content-page-pole  {
     width: auto;
     padding: 5px;
     float: left;
@@ -332,14 +332,14 @@ LAYOUT POUR PAGE.TPL WEBFORM
 ---------------------------------------------------*/
 
 /*inner content*/
-#content-inner-webform{
+.content-inner-webform{
     width:auto;
     margin:0 auto;
     float:left;
 
 }
 /*///    partie du centre   ///*/
-#middle-content-webform{
+.middle-content-webform{
 	float:left;
 	position:relative;
 	background-color:transparent;

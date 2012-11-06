@@ -63,7 +63,7 @@ orange fonce logo #DE603A
 
 
 /**----MIDDLE---***/
-#middle-content p{
+.middle-content p{
 	color:#000;
 	padding: 3px;
 
@@ -289,23 +289,23 @@ h6 {
 #colonne-3 hr{}
 /*¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 -------- PAGE LYCEE NODE.TPL ---------------*/
-#middle-content-page-lycee a{
+.middle-content-page-lycee a{
     color: #E2007A;
     padding: 0 2px;
 }
-#middle-content-page-lycee a:hover{
+.middle-content-page-lycee a:hover{
     background: #E2007A;
     color: white;
     text-decoration: none;
 }
-#middle-content-page-lycee strong{
+.middle-content-page-lycee strong{
     color: #E2007A;
 }
-#middle-content-page-lycee p,#middle-content-page-lycee ul{
+.middle-content-page-lycee p,.middle-content-page-lycee ul{
     padding: 3px;
     
 }
-#middle-content-page-lycee li{
+.middle-content-page-lycee li{
     list-style-position: inside;
     text-indent: 5px;
 }
@@ -363,7 +363,7 @@ h6 {
     behavior: url(/sites/all/libraries/PIE/PIE.htc);
    position: relative;
 }
-#docs_lycee .filefield-icon{
+#docs_lycee .filefield-icon,#docs_lycee .file-icon{
     display: none;
 }
 #video_lycee{
@@ -447,7 +447,7 @@ _______________________________________*/
      background: #E2007A;
     border-radius: 10px;
 }
-#docs_ficheform .filefield-icon{
+#docs_ficheform .file-icon{
     display: none;
 }
 .taxo-ficheform{
@@ -643,16 +643,18 @@ _______________________________________*/
 }
 #vdl-galerie-image h3{text-align: center;}
 /*Galerie lightbox*/
-#vdl-galerie-image .image-gallery-nodes ul li {
+#vdl-galerie-image .views-field-colorbox ul {list-style: none;}
+#vdl-galerie-image .views-field-colorbox ul li {
     background: none repeat scroll 0 0 transparent;
     display: inline-block;
     height: 100px;
     list-style-type: none;
     text-align: center;
-    width: 150px;}
-#vdl-galerie-image .image-gallery-nodes ul li img{
-    border: 3px solid #EFEFEF;
-}
+    width: 150px;margin: 3px;}
+#vdl-galerie-image .views-field-colorbox ul li img
+{border: 3px solid #EFEFEF;}
+#vdl-galerie-image .views-field-colorbox ul li img a
+{margin: 2px;}
 #vdl-video{
     width: 425px;
     margin: 0 auto;
@@ -689,7 +691,7 @@ _______________________________________*/
      background: #E2007A;
     border-radius: 10px;
 }
-#vdl-docs .filefield-icon{
+#vdl-docs .file-icon{
     display: none;
 }
 
@@ -1031,10 +1033,17 @@ _______________________________________*/
      background: #E2007A;
     border-radius: 10px;
 }
-#actu-docs .filefield-icon{
+#actu-docs .filefield-icon,#actu-docs .file-icon{
     display: none;
 }
 
+/*------------------------------------
+        WEBFORM
+_______________________________________*/
+.webform tbody{border: 0;}
+.webform table{}
+
+.webform iframe{display: block;margin: 3px auto;}
 /*------------------------------------
         PAGE ERREUR
 _______________________________________*/

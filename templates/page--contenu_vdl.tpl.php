@@ -8,6 +8,7 @@ include ($theme_path.'/includes/inc_header.php');
  <div id="contentPage" class="clearfix">
 
     <div id="content">
+            
               <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb || ($page['content_top']) ): ?>
             <div id="content-top">
@@ -40,16 +41,18 @@ include ($theme_path.'/includes/inc_header.php');
               <div id="highlight"><?php print render($page['highlight']) ?></div>
             <?php endif; ?>
 
-          
+            <!-- ______________________ LIENS CONTEXTUELS _______________________ -->
+        <ul class="action-links"><?php print render ($action_links); ?></ul>
 
             <?php print $messages; ?>
             <?php print render($page['help']); ?>
             <?php print render($tabs); ?>
 
+             
           </div> <!-- /#content-header -->
         <?php endif; ?>
 
-        <div id="content-area middle-content-page-VDL">
+        <div id="content-area" class="middle-content-page-VDL">
           <?php print render($page['content']) ?>
         </div>
 

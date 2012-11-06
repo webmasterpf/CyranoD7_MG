@@ -5,7 +5,8 @@ http://drupal.org/node/1089656
  *
  * Les fonctions de base sont issues de Basic.
  * penser à renommer avec le nom du theme.Nom du theme courant : cyranod7_mg
-
+ * 
+ * Pas besoin de déclarer les régions des nodes
 // */
 ?>
 <?php
@@ -43,9 +44,13 @@ function cyranod7_mg_preprocess_page(&$vars, $hook) {
     $vars['classes_array'][] = 'with-subnav';
   }
   if (isset($vars['node'])) {
-$vars['theme_hook_suggestion'] = 'page__'.$vars['node']->type; //
+$vars['theme_hook_suggestion'] = 'page__'.$vars['node']->type; //suggestions pour les pages
 }
-
+ if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) {//suggestion pour les categories
+    $tid = arg(2);
+    $vid = db_query("SELECT vid FROM {taxonomy_term_data} WHERE tid = :tid", array(':tid' => $tid))->fetchField();
+    $variables['theme_hook_suggestions'][] = 'page__vocabulary__' . $vid;
+  }
 }
 
 function cyranod7_mg_preprocess_node(&$vars) {
@@ -213,3 +218,48 @@ function cyranod7_mg_menu_local_tasks(&$variables) {
       $vars['head_title'] = implode(' | ', array(drupal_get_title(), variable_get('site_name'), variable_get('site_slogan')));  
     }
 
+/* === Fonctions issues de Drupal 6 === */
+    
+function cyranod6_mg_preprocess_node(&$vars, $hook) {
+
+//Partie template node.tpl
+$node = $vars['node'];
+$lesTypes=array('page_fiche_formation', 'page_pole','contenu_actualites');
+//ajouter les vids possibles pour chaque quelquesoit le type
+$lesVid=array('1','5');// vid 1 pour pole formation, vid 5 pour type actualite
+// on regarde si le type est dans le tableau
+if ( in_array($node->type,$lesTypes) ) {
+       if ( ! empty($node->taxonomy)  ) {
+// Récupération du 1er element du tableau
+           $term = array_shift($node->taxonomy);
+    // verifie si l'un des termes appartiennent bien à l'un des vid définis dans le tableau
+           if ( in_array($term->vid,$lesVid) ) {
+         
+              $tplfile = 'node-'.$node->type.'-'. $term->vid.'-'.$term->tid ;
+              $vars['template_files'][] = $tplfile ;
+          //drupal_set_message('Term name : '.$term->name,'status');
+          // drupal_set_message('Template file : '.$tplfile.'.tpl.php','status');
+          }
+    
+          
+      }
+ //drupal_set_message('Type du node hors : '.$node->type,'status');
+// drupal_set_message('Term name hors : '.$term->name,'status');
+    }
+    
+//Pour afficher une seule taxonomie non cliquable
+//http://drupal.org/node/823918//
+  $node = $vars['node'];
+  $vars['template_file'] = 'node-'. $node->nid;
+  $wanted_vid = array('2','5');//Choisir ici le vid voulu,utiliser ensuite la variable utile dans le node.tpl
+  
+        if ( in_array($term->vid,$wanted_vid) ) {
+      $vars['my_taxo_actu'] .= $term->name;
+      $vars['my_taxo_ficheform'] .= $term->name;
+       //drupal_set_message('VID trouve : '.$term->vid.'-Terme fiche formation :'.$term->name,'status');
+       //drupal_set_message('VID trouve : '.$term->vid.'-Terme actu :'.$term->name,'status');
+      //You would need to format this the way you want it displayed, or pass it to a theme function
+      //Changer le nom de la variable si l'on ne se sert pas toujours du meme vid
+    }
+  
+}

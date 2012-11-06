@@ -5,7 +5,7 @@
 
 #galleriffic {
   width: 95%;/*Largeur de la galerie*/
-  height: 550px;
+  height: auto;
 }
 
 #galleriffic .content {

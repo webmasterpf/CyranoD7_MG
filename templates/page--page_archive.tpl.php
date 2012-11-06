@@ -29,7 +29,7 @@ include ($theme_path.'/includes/inc_header.php');
        <!-- ______________________ CONTENT INNER GLOBAL _______________________ -->
 
 
-        <div id="content-inner-page-archives">
+       <div id="content-inner" class="content-inner-page-archives">
 
         <?php if ($messages || $tabs || $action_links): ?>
           <div id="content-header">
@@ -50,7 +50,7 @@ include ($theme_path.'/includes/inc_header.php');
         <?php endif; ?>
 
        <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-page---archives">
+       <div id="content-area" class="middle-content-page-archives">
           <?php print render($page['content']) ?>
         </div>
 
