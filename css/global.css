@@ -1133,6 +1133,8 @@ Liste Actus pour homepage
     font-size: 22px;
 }
 #HPGauche2 .view-empty{text-align: center;}
+#block-views-Actu_liste-block_2 h2.block-title
+{text-align: center;font-family: Arista,Trebuchet MS,sans-serif;display: block;font-size: 22px;color: #E2007A;}
 #table-actus-hp, #table-actus-hp2{
     width: 400px;
     margin: 0 auto;
@@ -1177,7 +1179,8 @@ Liste Actus pour homepage
 /*------------------------
 _____ DEFILANT HP ________
 --------------------------*/
-#annonce{color: #E2017B;display: block;font-size: 16px;font-weight: bold;margin: 5px auto;
-padding: 11px 0;text-align: center;width: 915px;border: 2px solid;}
+#block-views-Defilant_accueil-block_1,#annonce
+{display: block;margin: 5px auto;padding: 11px 0;text-align: center;width: 915px;}
+#annonce{color: #E2017B;font-size: 16px;font-weight: bold;border: 2px solid;}
 #annonce a{color: #93117E;text-decoration: none;font-weight: bold;}
 #annonce a:hover{text-decoration: underline;}

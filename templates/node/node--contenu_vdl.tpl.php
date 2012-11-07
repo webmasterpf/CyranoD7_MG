@@ -18,9 +18,9 @@
             <?php print render($title_suffix); ?>
             
                       
-            <?php if (!empty($content['field_passerelle_form'])): ?>
-            <div id="vdl-passerelle">
-   <?php  print  render($content['field_passerelle_form']['field']['#title']).'<br/>'.print render($content['field_passerelle_form']);  ?>
+          <?php if (!empty($content['field_passerelle_form'])): ?>
+            <div id="actu-passerelle">
+            <?php  print render($content['field_passerelle_form']);  ?>
             </div>
             <?php endif;?>
             
